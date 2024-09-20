@@ -44,4 +44,36 @@
 // }
 // console.log(evenNumbers)
 
-const numbers = ['Tom', 'Tim', 'Tin', 'Tik'];
+// const names = ['Tom', 'Tim', 'Tin', 'Tik'];
+// let trim = [];
+// for (pName of names) {
+//     trim = trim + pName;
+// }
+
+// console.log(trim)
+
+
+
+// TASK 4 HARD REVERS STRING WORD
+// const statement = 'I am a hard working person';
+// const state = statement.split(' ');
+// let rev = [];
+
+// for (sta of state) {
+//     rev.unshift(sta)
+//     rev.join(',');
+// }
+// console.log(rev)
+
+
+const statement = 'I am a hard working person';
+let sta = statement.split(' ');
+let reversed = '';
+
+for (let i = sta.length - 1; i >= 0; i--) {
+    const s = sta[i];
+    if (s == '') continue;
+    if (reversed.length > 0) reversed += ' ';
+    reversed += s;
+}
+console.log(reversed)
